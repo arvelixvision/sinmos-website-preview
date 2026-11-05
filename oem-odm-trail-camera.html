@@ -81,7 +81,17 @@
     .wa-float { position:fixed; bottom:28px; right:28px; z-index:200; background:#25d366; border-radius:50%; width:56px; height:56px; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 16px rgba(0,0,0,.4); text-decoration:none; transition:transform .2s; }
     .wa-float:hover { transform:scale(1.1); } .wa-float svg { width:30px; height:30px; fill:#fff; }
     @media (max-width:800px) { .pdp-hero { grid-template-columns:1fr; gap:28px; } nav { padding:0 20px; } .nav-links { display:none; } main { padding:88px 20px 20px; } .pdp-section.alt { padding:24px; } .feat-grid, .use-list { grid-template-columns:1fr; } .rel-grid { grid-template-columns:1fr; } footer { padding:24px 20px; } }
-  </style></head><body><nav>
+  
+.process-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;list-style:none;counter-reset:steps}
+.process-card{border:1px solid #293027;border-radius:12px;overflow:hidden;background:#111;padding:0 22px 24px}
+.process-art{height:150px;position:relative;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse at center,#23391a 0%,#111 72%);margin:0 -22px 20px;color:var(--green)}
+.process-art svg{width:82px;height:82px}.step-number{position:absolute;top:16px;left:20px;font-size:12px;letter-spacing:2px;color:#9caa94}
+.process-card h3{font-size:17px;color:#fff;margin-bottom:8px}.process-card p{font-size:13px;line-height:1.65;color:#a6a6a6}
+.process-note{font-size:13px;line-height:1.7;color:#aaa;margin-top:20px}.terms-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.term-card{padding:20px 14px;background:#111;border:1px solid #293027;border-radius:8px}.term-card span,.term-card small{display:block;color:#aaa;font-size:12px}.term-card strong{display:block;color:var(--green);font-size:28px;line-height:1.3;margin:12px 0}
+@media(max-width:900px){.terms-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:540px){.process-grid{grid-template-columns:1fr}.process-art{height:125px}.term-card strong{font-size:23px}}
+</style></head><body><nav>
   <a class="nav-logo" href="index.html">
     <svg viewBox="0 0 28 28" fill="none"><rect x="2" y="14" width="6" height="12" fill="#7ed321"/><rect x="11" y="8" width="6" height="18" fill="#7ed321"/><rect x="20" y="2" width="6" height="24" fill="#7ed321"/></svg>
     <div><div class="nav-logo-text">Arvelix</div><div class="nav-logo-sub">VISION</div></div>
@@ -99,7 +109,7 @@
 <div class="crumb"><a href="index.html">Home</a> / OEM &amp; ODM</div>
 <section class="pdp-section"><div class="pdp-tag">For distributors, importers and brand owners</div>
 <h1 class="pdp-name">OEM &amp; ODM Trail Camera Manufacturing</h1>
-<p class="pdp-lead">Build your trail camera enquiry around a specific model, target market and customization brief. Arvelix Vision is the export brand of SHENZHEN SINMOS TECHNOLOGY CO., LTD in Shenzhen, China. Discuss logo, packaging and firmware options with our team and request a quotation matched to your project.</p>
+<p class="pdp-lead">Your brand. Our trail camera range. Explore logo, sticker, packaging and firmware options with Arvelix Vision — the export brand of SHENZHEN SINMOS TECHNOLOGY CO., LTD, Shenzhen.</p>
 <a class="btn-quote" href="index.html#contact">Discuss Your OEM / ODM Project</a></section>
 <section class="pdp-section alt"><h2>Choose Your Project Scope</h2><div class="feat-grid">
 <div class="feat"><h3>Brand an existing model</h3><p>Start with a camera in our catalogue. Specify logo placement, packaging, manuals and accessories so the team can confirm available options.</p></div>
@@ -107,22 +117,7 @@
 <div class="feat"><h3>Hardware development enquiries</h3><p>If an existing model does not meet your needs, send a technical brief. Confirm feasibility, development costs, tooling, minimum volume and ownership terms before making a commitment.</p></div>
 <div class="feat"><h3>Market-specific versions</h3><p>Identify your destination market and intended use. For cellular cameras, confirm the radio version, carrier compatibility and required documentation.</p></div>
 </div></section>
-<section class="pdp-section alt"><h2>MOQ and Lead Times</h2><p>Samples from 1 pc. Logo printing and stickers: MOQ 100 pcs. Custom packaging: MOQ 1,000 pcs. Firmware customization and new hardware development: MOQ and feasibility confirmed by quotation.</p><p>In-stock samples are generally ready in 2 days. Private-label production generally takes 15–20 days after sample approval. Hardware development timing depends on customer requirements and is confirmed for each project.</p></section><section class="pdp-section"><h2>Prepare Your Enquiry</h2><table class="spec-table"><tbody>
-<tr><th scope="row">Target market</th><td>Destination country, customer type and sales channel.</td></tr>
-<tr><th scope="row">Camera requirements</th><td>Model, recording resolution, night vision, WiFi or 4G, power source and storage.</td></tr>
-<tr><th scope="row">Order quantity</th><td>Sample quantity, initial order and expected repeat orders.</td></tr>
-<tr><th scope="row">Customization</th><td>Logo artwork, packaging brief, language requirements and requested firmware changes.</td></tr>
-<tr><th scope="row">Schedule</th><td>Requested delivery date and time available for sample evaluation.</td></tr>
-<tr><th scope="row">Acceptance criteria</th><td>Required documents, sample tests, inspection criteria and warranty expectations.</td></tr>
-</tbody></table></section>
-<section class="pdp-section alt"><h2>Before You Approve Production</h2><ul class="use-list">
-<li>Confirm the exact model and regional version in the quotation.</li>
-<li>Evaluate a sample against your intended recording, power and connectivity requirements.</li>
-<li>Approve the customization scope, artwork and acceptance criteria in writing.</li>
-<li>Confirm MOQ, prices, payment terms and the lead-time starting point.</li>
-<li>Request model-specific compliance documents for your destination market.</li>
-<li>Agree inspection, shipment and after-sales arrangements with the team.</li>
-</ul></section>
+<section class="pdp-section alt"><h2>MOQ &amp; Timing at a Glance</h2><div class="terms-grid"><div class="term-card"><span>Logo &amp; stickers</span><strong>100 pcs</strong><small>Minimum order</small></div><div class="term-card"><span>Custom packaging</span><strong>1,000 pcs</strong><small>Minimum order</small></div><div class="term-card"><span>In-stock samples</span><strong>2 days</strong><small>Generally ready</small></div><div class="term-card"><span>Private label</span><strong>15–20 days</strong><small>After sample approval</small></div></div><p class="process-note">Firmware and new hardware: scope, MOQ and timing confirmed by quotation. Sample orders start from 1 pc.</p></section><section class="pdp-section" aria-labelledby="process-heading"><div class="pdp-tag">From idea to order</div><h2 id="process-heading">Your OEM / ODM Project</h2><ol class="process-grid"><li class="process-card"><div class="process-art"><span class="step-number">01</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="16" y="12" width="32" height="42" rx="5"/><path d="M24 24h16M24 32h16M24 40h10"/><path d="m40 47 5 5 9-11"/></svg></div><h3>Share Your Brief</h3><p>Market, model, quantity and branding needs.</p></li><li class="process-card"><div class="process-art"><span class="step-number">02</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="18" width="44" height="32" rx="6"/><circle cx="32" cy="34" r="10"/><path d="M22 18v-5h20v5M16 25h3"/></svg></div><h3>Evaluate a Sample</h3><p>Check recording, power and connectivity.</p></li><li class="process-card"><div class="process-art"><span class="step-number">03</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m14 44 4-13L41 8l12 12-23 23-16 4Z"/><path d="m34 15 12 12M18 31l12 12M12 55h40"/></svg></div><h3>Approve Your Design</h3><p>Confirm logo, stickers and packaging artwork.</p></li><li class="process-card"><div class="process-art"><span class="step-number">04</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M32 8 51 16v17c0 12-19 23-19 23S13 45 13 33V16Z"/><path d="m22 31 7 7 14-15"/></svg></div><h3>Confirm the Order</h3><p>Agree specifications, price, documents and timing.</p></li><li class="process-card"><div class="process-art"><span class="step-number">05</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 53V29l15 7V22l16 9V15h10v38ZM17 44h3m10 0h3m10 0h3"/><path d="M42 9h6"/></svg></div><h3>Plan Production</h3><p>Private label: generally 15–20 days after sample approval.</p></li><li class="process-card"><div class="process-art"><span class="step-number">06</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 20 20-10 20 10v26L32 56 12 46Z"/><path d="m12 20 20 10 20-10M32 30v26M22 15l20 10v10"/></svg></div><h3>Arrange Delivery</h3><p>Agree inspection, shipping and after-sales terms.</p></li></ol><p class="process-note">Send your target market, preferred model, quantity and customization brief to get started.</p></section>
 <section class="pdp-section"><h2>Select a Starting Model</h2><div class="feat-grid">
 <div class="feat"><h3><a href="pr1600-4k-wifi-trail-camera.html" style="color:var(--green)">PR1600 · WiFi</a></h3><p>Compare local app access, recording options and AA power.</p></div>
 <div class="feat"><h3><a href="pr802lte-4g-4k-trail-camera.html" style="color:var(--green)">PR802LTE · 4G LTE</a></h3><p>Review cellular specifications and destination-market requirements.</p></div>
