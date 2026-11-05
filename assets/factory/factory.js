@@ -1,0 +1,1 @@
+document.querySelectorAll('.factory-play').forEach(function(button){button.addEventListener('click',function(){var video=button.parentElement.querySelector('video');video.src=button.dataset.video;video.hidden=false;button.hidden=true;button.style.display='none';video.focus();video.play().catch(function(){});});});
